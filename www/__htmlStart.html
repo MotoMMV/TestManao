@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+<!-- Обнуление дефолтных стилей -->    
+	<link rel="stylesheet" href="css/reset.css?">
+
+<!-- Мои стили -->
+	<link rel="stylesheet" href="css/style.css?">
+
+<!--Заголовок будет подставляться в зависимости от запрашиваемой страницы-->
+	<title><!--title--></title>
+
+	<script>
+function LogOut()
+{
+	localStorage.removeItem( 'login' );
+	localStorage.removeItem( 'password' );
+	localStorage.removeItem( 'name' );
+	logout.classList.add( 'hide' );
+}
+
+
+function LogIn( login , password , name )
+{
+	localStorage.setItem( 'login' , login );
+	localStorage.setItem( 'password' , password );
+	localStorage.setItem( 'name' , name );
+}
+
+
+function LogInOut()
+{
+	let login = localStorage.getItem( 'login' );
+	let password = localStorage.getItem( 'password' );
+	let name = localStorage.getItem( 'name' );
+
+	if( !name || !login || !password )
+	{
+		logout.classList.add( 'hide' );
+		return;
+	}
+
+	username.innerHTML = name;
+	logout.classList.remove( 'hide' );
+}
+	</script>
+
+</head>
+<body>

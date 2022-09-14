@@ -1,0 +1,16 @@
+
+
+.header {
+	text-align: center;
+	font-weight: bold;
+	font-size: 200%;
+	text-decoration: none;
+	color: rgb(10, 10, 10);
+}
+.hide {
+	display:none;
+	}
+
+.b {
+	font-weight: bold;
+}

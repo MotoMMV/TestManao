@@ -1,0 +1,44 @@
+
+<!--ErrorMessage-->
+
+<!--Registration request--><!--
+Регистрация в системе:
+<br>
+    <p>
+        <p class="b">Login (unique):</p>
+        <input id=registration_login type="text" pattern="(?=.*[A-Za-z])[^' ']+" required title="Login введен некорректно">
+    </p>
+    <p>
+        <p class="b">Password:</p>
+        <input id=registration_password type="password" required minlength="6">
+    </p>
+    <p>
+        <p class="b">Сonfirm_password:</p>
+        <input id=registration_password_confirm type="password">
+    </p>
+    <p>
+        <p class="b">Еmail (unique):</p>
+        <input id=registration_email type="email" required>
+    </p>
+    <p>
+        <p class="b">Name:</p>
+        <input id=registration_name type="text" pattern="(?=.*[A-Za-z])[^' ']+" title="Name не может содержать пробелы" required>
+    </p>
+
+    <p><button onclick="SubmitFormRegistration();return false;">Зарегистрироваться</button>
+    </p>
+
+<form id=signup_form action="index.php?path=signup" method="POST">
+	<input id=signup_login type="hidden" name="login">
+	<input id=signup_password type="hidden" name="password">
+	<input id=signup_password_confirm type="hidden" name="confirm_password">
+	<input id=signup_email type="hidden" name="email">
+	<input id=signup_name type="hidden" name="name">
+</form>
+
+--><!--Registration request-->
+
+
+<!--Welcome message--><!--
+Регистрация успешно завершена, %UserName%
+--><!--Welcome message-->
